@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bora de Whats </title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');</style>
+</head>
+<body>
+    <div onclick="mandaZap(this)" class="vid"><p> Bom dia flor do dia!</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp-logo-PNG-Transparent"></div>
+    <div onclick="mandaZap(this)" class="vid"><p>Boa tarde meu bem!</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp-logo-PNG-Transparent"></div>
+    <div onclick="mandaZap(this)" class="vid"><p>Boa noite, querida!</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp-logo-PNG-Transparent"></div>
+    <div onclick="mandaZap(this)" class="vid"><p>Hoje é dia</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp-logo-PNG-Transparent"> </div>
+    <div onclick="mandaZap(this)" class="vid"><p>Sextoooou, bora beber!</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp-logo-PNG-Transparent"></div>
+    <div onclick="mandaZap(this)" class="vid"><p>Um dia tão lindo desse!</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp-logo-PNG-Transparent"></div>
+    <div onclick="mandaZap(this)" class="vid"><p>Só queria dizer que está tudo bem</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="whatsapp-logo-PNG-Transparent"></div>
+
+
+    <script>
+        function mandaZap (elemento){
+            let texto = elemento.firstElementChild.innerText;
+            let numero = prompt("Qual é o número para mandar a mensagem?")
+           let zapLink =  `https://api.whatsapp.com/send?phone=${numero}&text=${texto}`;
+
+           window.open(zapLink);
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+
+.vid{
+    background-color: #daf7c1;
+    width: 300px;
+    margin: 8px;
+    padding: 8px 18px;
+    border-radius: 14px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vid:hover{
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(https://i.pinimg.com/originals/34/8f/c9/348fc9806e32bba0fb4c42e799ddf880.jpg);
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
